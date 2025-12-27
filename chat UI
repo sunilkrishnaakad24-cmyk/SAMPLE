@@ -27,6 +27,126 @@
         I need help with my account.
       </div>
 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Chat Container */
+.chat-container {
+  width: 360px;
+  height: 520px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.chat-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  background: #6366f1;
+  color: white;
+}
+
+.chat-header img {
+  border-radius: 50%;
+}
+
+.chat-header h4 {
+  font-size: 1rem;
+}
+
+.chat-header span {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+/* Messages */
+.chat-messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background: #f8fafc;
+}
+
+.message {
+  max-width: 75%;
+  padding: 0.7rem 1rem;
+  border-radius: 16px;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Received */
+.received {
+  background: #e5e7eb;
+  color: #111827;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+/* Sent */
+.sent {
+  background: #6366f1;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+/* Input */
+.chat-input {
+  display: flex;
+  padding: 0.8rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 20px;
+  outline: none;
+}
+
+.chat-input button {
+  margin-left: 0.6rem;
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Scrollbar (optional) */
+.chat-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background: #c7d2fe;
+  border-radius: 10px;
+}
+
+
       <div class="message received">
         Sure! Please tell me more about the issue.
       </div>
